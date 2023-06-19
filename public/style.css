@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body, #root {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding-bottom: 90px; /* Set padding to accommodate the header and footer */
+  min-height: 100vh;
+  position: relative;
+}

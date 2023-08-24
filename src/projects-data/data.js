@@ -38,7 +38,7 @@ export const myProjects = [{
     links:['https://github.com/Ganna-And/learn-bahasa.git','learn-bahasa.vercel.app']
    },
    { img: [Reddit, Reddit1, Reddit2 ],
- title:'Reddit',
+ title:'Frontend Reddit',
  description:'A front-end web app displaying data fetched from Reddit API.This project helped me tounderstand better  React, Redux and  Reddit Json API.',
  technologies:'React, Recoil, Tailwind, NextJs, DaisyUI',
  features:["Fetch and display posts and comments from Reddit API",

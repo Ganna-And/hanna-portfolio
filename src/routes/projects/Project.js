@@ -5,10 +5,6 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { myProjects} from '../../projects-data/data';
 
 
-
-
-
-
 const Project = () => {
   
   const [indexProject, setIndexProject] = useState(0);

@@ -1,13 +1,15 @@
 import React from 'react';
-import { FaArrowAltCircleLeft } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import CV from '../../img/My CV.pdf.png';
+import CVPDF from '../../img/CV.PDF.pdf'
+import './Cv.css'
 
-
-const Cv = () => {
+const Cv = ({isChecked}) => {
   return (
     <main className='container'>
-      cv
-      <FaArrowAltCircleLeft/><Link to="/">HOME</Link> 
+      <section  className='cv-box'>
+      <img className='cv' src={CV} alt='my cv' />
+      <h3>Click <a href={CVPDF} download>here</a> to dowload</h3>
+      </section>
     </main>
   )
 }

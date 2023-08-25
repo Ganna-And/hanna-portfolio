@@ -39,7 +39,7 @@ export const myProjects = [{
    },
    { img: [Reddit, Reddit1, Reddit2 ],
  title:'Frontend Reddit',
- description:'A front-end web app displaying data fetched from Reddit API.This project helped me tounderstand better  React, Redux and  Reddit Json API.',
+ description:'A front-end web app displaying data fetched from Reddit API.This project helped me to understand better  React, Redux and  Reddit Json API.',
  technologies:'React, Recoil, Tailwind, NextJs, DaisyUI',
  features:["Fetch and display posts and comments from Reddit API",
  "Search functionality",

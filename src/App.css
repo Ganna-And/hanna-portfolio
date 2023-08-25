@@ -128,6 +128,7 @@ input:checked + label .circle {
 
 .references{
   display: flex;
+  width:100%
 }
 
 button{
@@ -292,7 +293,7 @@ img.cv {
 }
 
 /* Small tablets and large smartphones */
-@media only screen and (min-width: 545px) and (max-width: 767px) {
+@media only screen and (min-width: 719px) and (max-width: 1080px) {
   .container{
     width:95%;
     flex-direction: column;
@@ -307,6 +308,8 @@ img.cv {
     text-align: center;
     background-color: none;
     height: auto;
+    border-radius: 5%;
+    margin-top: 2rem;
     
   }
   .container {
@@ -360,21 +363,10 @@ img.cv {
   
 }
 
-/* Tablets and larger devices */
-@media only screen and (min-width: 768px) and (max-width: 2000px) {
-  .info{
-    width: 12rem;
-    background-color: #DFCDC3;
-    height: 60%;
-    padding: 5%;
-    border-top-right-radius: 50%;
-    border-bottom-left-radius: 15%;
-    border-bottom-right-radius: 60%;
-    flex-grow: 1;
-  
-}
+
+
  
-}
+
 
 
 

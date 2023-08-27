@@ -265,18 +265,38 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-inline: 0;
   box-shadow: none;
-  padding: 0;
   text-align: center;
   width: 100%;
   height: 80%;
   position: absolute;
+  left:0;
  }
+
+ .project-description, .technologies,.links{
+  width: 95%;
+  margin:2rem;
+}
+
+.links{
+  margin: 0;
+}
+hr{
+  visibility: hidden;
+}
+.references{
+  margin-top: 0rem;
+}
+
 
  .screen{
   border-radius: 15px;
   height: 100%;
   background-color: #ffffff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
 
  .phone{
@@ -339,11 +359,7 @@ img.cv {
     margin-top: 2rem;
     
   }
-  .container {
-    width: 95%;
-    overflow-x: auto;
-  }
-
+  
   .phone {
     width: 100%;
     max-width: 500px;

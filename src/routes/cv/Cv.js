@@ -8,7 +8,7 @@ const Cv = ({isChecked}) => {
     <main className='container'>
       <section  className='cv-box'>
       <img className='cv' src={CV} alt='my cv' />
-      <h3>Click <a href={CVPDF} download>here</a> to dowload</h3>
+      <h3 >Click <a style={{color: 'blue'}} href={CVPDF} download>here</a> to dowload</h3>
       </section>
     </main>
   )

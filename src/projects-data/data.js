@@ -50,13 +50,11 @@ export const myProjects = [{
  },
    { img: [Store, Store1, Store2 ],
  title:'Ecommerce Admin & Store',
- description:'This E-Commerce platform with Shadcn UI admin dashboard allows easy management of multiple vendors and stores. You can control categories, products, filters, images, and billboards effortlessly. The project includes Clerk Authentication and Stripe integration for secure orders and payments. Built on MySQL, Prisma, and PlanetScale, it provides clear revenue insights through graphs.',
+ description:'This E-Commerce admin dashboard allows easy management of vendors and stores. You can control categories, products, filters, images, and billboards effortlessly. The project includes Clerk Authentication and Stripe integration for payments.',
  technologies:'React, NextJs, Typescript, Tailwind + Shadcn UI, Prisma + PlanetScale, Clerk authentication, Stripe',
  features:[
   "Browse multiple stores from a single dashboard.",
   "Customize products with various sizes, colors, and filters.",
-  "Effortless ordering with secure Stripe checkout.",
-  "Discover featured items and curated collections.",
   "Track orders and gain insights into sales data."
  ],
  links:['https://github.com/Ganna-And/ecommerse-dashboard.git', 'https://ecommerse-dashboard.vercel.app', 

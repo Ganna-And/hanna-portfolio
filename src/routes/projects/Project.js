@@ -47,7 +47,7 @@ const Project = () => {
         className='main-head'>
         <button className='btn' 
         onClick={changeProjectsBackwards}>
-        <FaAngleLeft />Previous
+        <FaAngleLeft style={{marginRight:'0'}} />Previous
     </button> 
    <h1 className='project-title'>
     {projects[indexProject].title}</h1>   
@@ -58,7 +58,7 @@ const Project = () => {
     </button>
     </div>  
         <section className='img-box'>
-         <div>
+         <div className='carousel'>
          <img 
          alt='project screenshot'
          className='img-container' src={projects[indexProject].img[indexImg]}/> 
@@ -71,8 +71,8 @@ const Project = () => {
           ))}
         </div>
         </div>
-        <div>
-       <p className='project-description'>{projects[indexProject].description}</p>
+        <div className='project-description'>
+       <p >{projects[indexProject].description}</p>
        <ul>{projects[indexProject].features.map((feature)=>(
         <li key={feature.id}style={{fontSize:'1.3rem'}}>{feature}</li>
        ))}</ul>
@@ -80,13 +80,16 @@ const Project = () => {
        </section> 
       
         <div className='references'>
+          <div className='technologies'>
        <p style={{marginRight:'3rem',
        fontSize:'x-large', 
        fontWeight:'600'}}>Technologies:
-       <br /><span 
+       <br />
+       <span 
        style={{fontStyle:'italic',
         fontWeight:'400',
         fontSize:'1.3rem'}}>{projects[indexProject].technologies}</span></p> 
+        </div>
        
        <ul  className='links'>
         <li className='li-links'>

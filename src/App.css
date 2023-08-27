@@ -58,7 +58,9 @@ header {
   
   .li-head:hover{
     text-decoration: underline;
-    font-weight: 800;
+    font-weight: 600;
+    scale: 1.1;
+    transition: 500ms;
   }
 
 header,footer{
@@ -73,7 +75,7 @@ header,footer{
   width: 60%;
 }
 
-a{
+.li-links a{
   color: blue
 }
 
@@ -128,19 +130,34 @@ input:checked + label .circle {
 
 .references{
   display: flex;
-  width:100%
+  width:100%;
+  margin-top: 2rem;
 }
 
-button{
+.technologies{
+  width: 40%;
+}
+
+.carousel{
+  width: 28rem;
+}
+
+.logo-content-btn{
+  height: 25px;
+  width: 25px;
+}
+
+button.btn{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 7rem;
   height: 3rem;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   background-color: #DFCDC3;
   border-radius: 0.7rem;
+  border: 1px solid rgb(90, 90, 90);
   box-shadow: 1px 1px 2px hsl(0, 0%, 0%, 0.6);
 }
 
@@ -159,7 +176,7 @@ footer{
 
 .container{
   position: absolute;
-  top:90px;
+  top: 5rem;
   width: 70%;
   display: flex;
   justify-content: center;
@@ -185,11 +202,21 @@ footer{
 .project-title{
   margin: 0;
   font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.li-links{
+  list-style-type: none;
+  margin-left: 4rem;
 }
 
 
 .link-head{
   font-size: 1.6rem;
+}
+
+.link-head:hover{
+  font-weight: 500;
 }
 /* Smartphones */
 @media only screen and (max-width: 720px) {

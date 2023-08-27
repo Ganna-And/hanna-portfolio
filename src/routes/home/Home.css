@@ -18,15 +18,14 @@
     height: 100%;
     width: 100%;
     background-color: #DFCDC3;
-    overflow: hidden;  
-    padding-inline: 4%;
+    overflow: hidden; 
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
 .content{
-    width: 100%;
+    width: 12rem;
     height: 100%;
     display: grid;
     justify-content: center;
@@ -56,8 +55,7 @@ border-radius: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 90%;
-    
+    width: 100%;
 }
 
 svg{

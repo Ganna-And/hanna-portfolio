@@ -3,7 +3,11 @@ import './Home.css';
 import {FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { useState } from 'react';
 import profile from '../../img/profile.jpg'
-import Footer from '../layout/Footer';
+
+import { useDisclosure } from '@chakra-ui/react';
+import { ModalPage } from '../../components/modal';
+
+
 
 
 
@@ -12,6 +16,10 @@ const Home = ({isChecked}) => {
 const skills = ['HTML', 'CSS', 'JavaScript', 'ReactJs', 'Redux'];
 
  const [skillIndex, setSkillIndex] = useState(0);
+ const { isOpen, onOpen, onClose } = useDisclosure();
+
+
+
  let skillRef = useRef(null);
 
 useEffect(()=>{
@@ -47,9 +55,9 @@ return ()=>{
               <a className= 'logo-contact' href="https://www.linkedin.com/in/ganna-andrushko-4406b2157/">
                 <FaLinkedin />
               </a>
-              <a className= 'logo-contact' href="./resources/img/my_WA.jpg" target="_blank">
+              < button className='logo-content-btn' onClick={()=>{onOpen()}}>
                 <FaWhatsapp />
-              </a>
+              </button>
               <a
                 className= 'logo-contact' href="https://contacts.google.com/search/ganna.andrushko@gmail.com?hl=en-GB"
               >
@@ -65,12 +73,12 @@ return ()=>{
         </div>
       </div>
      <div className="info">
-     <h3 style={{fontSize: '1.9rem', }}>Greetings!</h3>
-     <h4 style={{fontSize: '1.5rem', fontWeight:'400' }}>I'm Hanna Andrushko, Frontend Developer Intern with a Passion for Crafting Digital Experiences. Eager to Learn, Create, and Contribute.
+     <h3 style={{fontSize: '1.8rem', }}>Greetings!</h3>
+     <h4 style={{fontSize: '1.3rem', fontWeight:'400' }}>I'm Hanna Andrushko, Frontend Developer Intern with a passion for crafting digital experiences. Eager to learn, create, and contribute.
       Let's build something extraordinary together!</h4>
-     <h5 style={{fontSize: '1.5rem', fontWeight:'400' }} ref={skillRef}></h5> 
+     <h5 style={{fontSize: '1.3rem', fontWeight:'400' }} ref={skillRef}></h5> 
       </div>
-       <Footer />
+       {<ModalPage onClose={onClose} isOpen={isOpen} onOpen={onOpen}/>}
     </div>
    
   )

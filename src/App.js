@@ -3,8 +3,11 @@ import Home from "./routes/home/Home";
 import Cv from "./routes/cv/Cv";
 import Missing from "./routes/missing/Missing";
 import Layout from "./routes/layout/Layout";
-import Project from './routes/projects/Project'
-import './App.css'
+import Project from './routes/projects/Project';
+import './App.css';
+import { CSSReset, ChakraProvider } from "@chakra-ui/react";
+
+
 
 
 function App() {
@@ -12,6 +15,8 @@ function App() {
  
 
   return (
+    <ChakraProvider>
+      <CSSReset/>
     <Routes>
       <Route path='/' element={<Layout/> }>
       <Route index element={<Home /> } />
@@ -22,6 +27,7 @@ function App() {
       <Route path='*' element={<Missing /> } />
       </Route>
     </Routes>
+    </ChakraProvider>
   )
 }
 

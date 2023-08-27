@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './Home.css';
 import {FaWhatsapp, FaEnvelope, FaGithub, FaLinkedin} from 'react-icons/fa';
 import { useState } from 'react';
-import profile from '../../img/profile.jpg'
+import profile from '../../img/Hanna Photo.jpg'
 
 import { useDisclosure } from '@chakra-ui/react';
 import { ModalPage } from '../../components/modal';

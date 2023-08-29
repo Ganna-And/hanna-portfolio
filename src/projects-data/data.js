@@ -35,7 +35,7 @@ export const myProjects = [{
     description:'This project was my own creation for persanal usage. Its a learning tool that consists of small cards with english-bahasa phrases on them, and 10 different topics to start your learning process',
     technologies:'React, Recoil, React-Bootstrap, Firebase, Styled Components',
     features:['Data with 10 diverse topics with 10 prases on each saved in Firestore, available for all users', 'Ability to shift cards from the "Learned" category back to "Study" that gives more control over learning process.','Authentication with Firebase sign up, login experience.'],
-    links:['https://github.com/Ganna-And/learn-bahasa.git','learn-bahasa.vercel.app']
+    links:['https://github.com/Ganna-And/learn-bahasa.git','https://learn-bahasa.vercel.app']
    },
    { img: [Reddit, Reddit1, Reddit2 ],
  title:'Frontend Reddit',
@@ -46,7 +46,7 @@ export const myProjects = [{
  "Filtering by predefined categories",
  "Detailed view for selected items",
  "Responsive design for all devices"],
- links:['https://github.com/Ganna-And/frontend_reddit', 'frontend-reddit.vercel.app']
+ links:['https://github.com/Ganna-And/frontend_reddit', 'https://frontend-reddit.vercel.app/']
  },
    { img: [Store, Store1, Store2 ],
  title:'Ecommerce Admin & Store',

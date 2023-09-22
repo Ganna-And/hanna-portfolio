@@ -5,7 +5,7 @@ const Switcher = ({isChecked, setIsChecked}) => {
     setIsChecked( isChecked === false ? true : false)
   }
   return (
-    <div className='mode'>
+    <div className='block_switcher'>
         <input type="checkbox" id="switcher" 
        value={isChecked} onChange={toggleMode} />
         <label htmlFor="switcher">

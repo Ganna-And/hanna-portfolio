@@ -49,7 +49,7 @@ const Project = () => {
         onClick={changeProjectsBackwards}>
         <FaAngleLeft style={{marginRight:'0'}} />Previous
     </button> 
-   <h1 className='project-title'>
+   <h1 className='text font-montserrat text-4xl font-bold'>
     {projects[indexProject].title}</h1>   
    <button 
     onClick={changeProjectsForward} className='btn'>
@@ -72,39 +72,35 @@ const Project = () => {
         </div>
         </div>
         <div className='project-description'>
-       <p >{projects[indexProject].description}</p>
-       <ul>{projects[indexProject].features.map((feature)=>(
-        <li key={feature.id}style={{fontSize:'1.3rem'}}>{feature}</li>
+       <p  className='text font-lora inline-block text-base'>{projects[indexProject].description}</p>
+       <ul className='mt-[3rem] ml-[2rem]'>{projects[indexProject].features.map((feature)=>(
+        <li key={feature.id} className='font-lora font-thin'>{feature}</li>
        ))}</ul>
        </div>
        </section> 
       
         <div className='references'>
           <div className='technologies'>
-       <p style={{marginRight:'3rem',
-       fontSize:'x-large', 
-       fontWeight:'600'}}>Technologies:
+       <p className='font font-montserrat text-2xl '>Technologies:
        <br />
        <span 
-       style={{fontStyle:'italic',
-        fontWeight:'400',
-        fontSize:'1.3rem'}}>{projects[indexProject].technologies}</span></p> 
+       className='font font-lora italic text-md'>{projects[indexProject].technologies}</span></p> 
         </div>
        
        <ul  className='links'>
-        <li className='li-links'>
-          Link to GitHub:<a href={projects[indexProject].links[0]}>{projects[indexProject].links[0]}</a>
+        <li className='li-links font-montserrat font-bold'>
+          Link to GitHub: <a className='font-thin' href={projects[indexProject].links[0]}>{projects[indexProject].links[0]}</a>
           </li>
-        <li className='li-links' >
-         Demo live Version: <a href={projects[indexProject].links[1]}>{projects[indexProject].links[1]}</a>
+        <li className='li-links font-montserrat font-bold' >
+         Demo live Version: <a  className='font-thin' href={projects[indexProject].links[1]}>{projects[indexProject].links[1]}</a>
           </li>{
   projects[indexProject].links.length === 4 && (
     <>
-      <li className='li-links'>
-        Link to GitHub:<a href={projects[indexProject].links[2]}>{projects[indexProject].links[2]}</a>
+      <li className='li-links font-montserrat font-bold'>
+        Link to GitHub: <a className='font-thin'  href={projects[indexProject].links[2]}>{projects[indexProject].links[2]}</a>
       </li>
-      <li className='li-links'>
-        Demo live Version: <a href={projects[indexProject].links[3]}>{projects[indexProject].links[3]}</a>
+      <li className='li-links font-montserrat font-bold'>
+        Demo live Version: <a className='font-thin'  href={projects[indexProject].links[3]}>{projects[indexProject].links[3]}</a>
       </li>
     </>
   )

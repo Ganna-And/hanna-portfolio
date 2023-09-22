@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@200;400;700&display=swap');
+
+.icon_wrapper {
+    @apply w-16 h-16 border-2 rounded-full border-primary flex justify-center items-center self-end mb-4;
+  }
+.btn:hover{
+  @apply bg-primary opacity-50
+}
+ body{
+  @apply font-montserrat
+ }

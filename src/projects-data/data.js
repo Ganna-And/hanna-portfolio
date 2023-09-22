@@ -11,6 +11,10 @@ import Reddit2 from '../img/Fronten_Reddit3.png';
 import Store from '../img/ecommerce.png';
 import Store1 from '../img/ecommerce1.png'
 import Store2 from '../img/ecommerce2.png';
+import Coffe1 from '../img/coffe-shop1.png';
+import Coffe2 from '../img/coffe-shop2.png';
+import Coffe3 from '../img/coffe-shop3.png';
+
 
 
 
@@ -37,6 +41,23 @@ export const myProjects = [{
     features:['Data with 10 diverse topics with 10 prases on each saved in Firestore, available for all users', 'Ability to shift cards from the "Learned" category back to "Study" that gives more control over learning process.','Authentication with Firebase sign up, login experience.'],
     links:['https://github.com/Ganna-And/learn-bahasa.git','https://learn-bahasa.vercel.app']
    },
+   {
+    img: [Coffe1, Coffe2, Coffe3],
+    title: 'Coffee Shop: Online Coffee Store',
+    description: 'I developed an online coffee shop using React and Redux, offering both English and Ukrainian language support. Customers can browse coffee products, add them to the cart, and remove items from the cart. The project includes custom login and signup pages.',
+    features: [
+      'Browse coffee products',
+      'Add and remove products from the cart',
+      'English and Ukrainian language support',
+      'Customized login and signup pages',
+    ],
+    links: [
+      'https://github.com/Ganna-And/cofee-shop-300af22d2e844cbf3ff9bce6086e01e773e5623b.git',
+      'https://coffee-shop-drab.vercel.app/',
+    ],
+    technologies: 'React.js, Redux, Custom CSS, Multilingual Support (English and Ukrainian)',
+  },
+   
    { img: [Reddit, Reddit1, Reddit2 ],
  title:'Frontend Reddit',
  description:'A front-end web app displaying data fetched from Reddit API.This project helped me to understand better  React, Redux and  Reddit Json API.',

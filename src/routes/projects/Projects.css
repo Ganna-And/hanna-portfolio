@@ -6,11 +6,8 @@ main.myprojects {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-inline: 10%;
   padding: 3%;
   border-radius: 2rem;
-  background-color: hsla(0, 20%, 99%, 0.5);
-  box-shadow: 2px 2px 3px 4px #00000030;
 }
 .main-head{
   display: flex;

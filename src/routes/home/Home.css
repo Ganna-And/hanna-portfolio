@@ -45,10 +45,11 @@
 
    
 }
-img.profile-img{
-aspect-ratio: 1/1.2;
-max-height: 200px;
-border-radius: 50%;
+img.profile_img{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 25%;
 }
 
 .contact-box{
@@ -59,22 +60,35 @@ border-radius: 50%;
 }
 
 svg{
-    color: black;
     height: 25px;
     width: 25px;
-    box-shadow: 1px 1px 3px black;
     border-radius: 5px;
     margin-right: 5%;
+    transition: transform 0.3s ease;
+}
+
+
+
+svg:hover{
+    cursor: pointer;
+    transform: scale(1.25);
 }
 
 .name{
     width: 100%;
 }
-
-svg:hover{
-    cursor: pointer;
+.icon_wrapper:hover{
+  border: 2px solid greenyellow;
+  animation: pulse 1s infinite alternate;
 }
-
+@keyframes pulse {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.1);
+        }
+      }
 svg:active{
     box-shadow: none;
     border: #353534 1px solid;

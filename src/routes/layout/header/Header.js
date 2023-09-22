@@ -1,29 +1,15 @@
-import React, { useEffect, useState }from "react";
-import "./Header.css";
-import Switcher from "./Switcher";
-import Nav from "./Nav";
-
+import React, { useEffect, useState } from "react";
 
 const Header = () => {
-    const [isChecked, setIsChecked] = useState(false);
-
-    useEffect(()=>{
-     updateBody()
-    }, [isChecked])
- 
- 
-  function updateBody(){
-     const body = document.querySelector('body');
-     if(isChecked){
-     body.style.backgroundColor = 'black';
- }else{
-     body.style.backgroundColor = 'white';
- }
-  }
   return (
     <header>
-      <Switcher isChecked={isChecked} setIsChecked={setIsChecked}/>
-      <Nav isChecked={isChecked}/>
+      <label className="label cursor-pointer">
+        <input type="checkbox" className="toggle" checked />
+      </label>
+
+      <button className="projects_btn">
+        <p className="text">PROJECTS</p>
+      </button>
     </header>
   );
 };

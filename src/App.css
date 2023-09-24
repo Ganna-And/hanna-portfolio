@@ -10,7 +10,30 @@
   box-sizing: inherit;
 }
 
+button.download {
+  padding: 0.5rem;
+  border-radius: 10px;
+  position: relative; 
+}
 
+button.download span {
+  position: absolute;
+  width: 0;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  color: black;
+  transition: width 0.5s; }
+
+button.download:hover span {
+  width: 100%; 
+}
+
+button.download:hover{
+  color: black;
+  font-weight: 500;
+}
 
 body, #root, .App{
   min-height: 100vh;

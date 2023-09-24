@@ -55,7 +55,10 @@ const Home = ({ isChecked }) => {
           style={{ fontSize: "1.3rem", fontWeight: "400" }}
           ref={skillRef}
         ></aside> 
-        <button className="btn bg-primary text-black lg:self-end lg:mr-[5rem] lg:mt-[1rem]"><a href={CVPDF} download>DOWNLOAD CV</a></button>
+        <button className="download bg-transparent border-2 border-primary lg:self-end lg:mr-[5rem] lg:mt-[1rem] relative">
+  <span className="bg-primary h-100% w-0 absolute"></span>
+  <a href={CVPDF} download>DOWNLOAD CV</a>
+  </button>
         <ul className="lg:w-[50%] lg:self-center lg:h-[50px] lg:flex lg:flex-row lg:justify-between lg:mt-[4rem] mt-[5rem] flex flex-col md:ml-[-2rem] ">
         <li className="icon_wrapper">
         <a className= 'logo-contact p-1' href="https://www.linkedin.com/in/ganna-andrushko-4406b2157/">

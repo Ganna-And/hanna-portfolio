@@ -63,23 +63,25 @@ section.project-content {
 }
 
 
-.indicator {
+.myindicator {
   width: 20px;
   height: 20px;
   margin-right: 5px;
   border-radius: 50%;
   border: 1px solid black;
+
   
 }
 
 .indicators {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 50px;
+  width: 80%;
  
 }
-.indicator\.active {
+.active {
   width: 20px;
   height: 20px;
   margin-right: 5px;

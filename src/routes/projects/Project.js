@@ -49,7 +49,7 @@ const Project = () => {
         onClick={changeProjectsBackwards}>
         <FaAngleLeft style={{marginRight:'0'}} /><p className='hidden lg:block md:block '>Previous</p>
     </button> 
-   <h1 className='text font-montserrat lg:text-4xl md:text-3xl font-bold ml-[1.5rem]'>
+   <h1 className='text font-montserrat lg:text-3xl md:text-3xl font-bold ml-[1.5rem]'>
     {projects[indexProject].title}</h1>   
    <button 
     onClick={changeProjectsForward} className='btn  btn-sm bg-primary md:w-[10rem] lg:w-[10rem]  w-auto'>
@@ -58,7 +58,7 @@ const Project = () => {
     </button>
     </div>  
         <section className='img-box'>
-         <div className='carousel '>
+         <div className='carousel flex-col'>
          <img 
          alt='project screenshot'
          className='img-container lg:w-[80%]' src={projects[indexProject].img[indexImg]}/> 
@@ -66,7 +66,7 @@ const Project = () => {
           {projects[indexProject].img.map((_, i)  =>(
            <div
            key={i}
-           className={`indicator${i === indexImg ? '.active' : ''}`}
+           className={`myindicator ${i === indexImg ? 'active' : ''}`}
            onClick={()=>changeImage(i)}></div>
           ))}
         </div>

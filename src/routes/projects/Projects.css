@@ -17,9 +17,10 @@ div.project {
   display: flex;
   justify-content: center;
   align-items: start;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .img-container{
-  margin-right: 4rem;
   border-radius: 2rem;
   box-shadow: 2px 2px 3px hsl(0, 0%, 0%, 0.6);
 }
@@ -137,6 +138,8 @@ section.project-content {
     height: auto;
     
 }
+
+
 
 .img-box{
   display: flex;

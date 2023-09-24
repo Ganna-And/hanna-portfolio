@@ -72,7 +72,7 @@ const Project = () => {
         </div>
         </div>
         <div className='project-description w-full lg:w-[60%]'>
-       <p  className='text font-lora inline-block text-xl mt-[2rem]  md:w-[100%]'>{projects[indexProject].description}</p>
+       <p  className='text font-lora  lg:text-xl lg:mt-[2rem]  md:w-[100%]'>{projects[indexProject].description}</p>
        <ul className='md:mt-[3rem] ml-[2rem] '>{projects[indexProject].features.map((feature)=>(
         <li key={feature.id} className='font-lora font-thin'>{feature}</li>
        ))}</ul>
@@ -81,25 +81,25 @@ const Project = () => {
       
         <div className='references'>
           <div className='technologies md:w-[40%]'>
-       <p className='font font-montserrat md:text-2xl  '>Technologies:
+       <p className='font font-montserrat text-sm md:text-2xl  '>Technologies:
        <br />
        <span 
        className='font font-lora italic text-md'>{projects[indexProject].technologies}</span></p> 
         </div>
        
        <ul  className='links'>
-        <li className='li-links font-montserrat font-bold'>
+        <li className='li-links text-sm ml-0 lg:ml-[4rem] font-montserrat font-bold'>
           Link to GitHub: <a className='font-thin' href={projects[indexProject].links[0]}>{projects[indexProject].links[0]}</a>
           </li>
-        <li className='li-links font-montserrat font-bold' >
+        <li className='li-links text-sm ml-0  lg:ml-[4rem] font-montserrat font-bold' >
          Demo live Version: <a  className='font-thin' href={projects[indexProject].links[1]}>{projects[indexProject].links[1]}</a>
           </li>{
   projects[indexProject].links.length === 4 && (
     <>
-      <li className='li-links font-montserrat font-bold'>
-        Link to GitHub: <a className='font-thin'  href={projects[indexProject].links[2]}>{projects[indexProject].links[2]}</a>
+      <li className='li-links text-sm font-montserrat font-bold'>
+        Link to GitHub: <a className='font-thin '  href={projects[indexProject].links[2]}>{projects[indexProject].links[2]}</a>
       </li>
-      <li className='li-links font-montserrat font-bold'>
+      <li className='li-links  text-sm font-montserrat  font-bold'>
         Demo live Version: <a className='font-thin'  href={projects[indexProject].links[3]}>{projects[indexProject].links[3]}</a>
       </li>
     </>

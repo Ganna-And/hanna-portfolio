@@ -55,25 +55,25 @@ const Home = ({ isChecked }) => {
           style={{ fontSize: "1.3rem", fontWeight: "400" }}
           ref={skillRef}
         ></aside> 
-        <button className="btn bg-primary text-black lg:self-end  lg:mr-[5rem] lg:mt-[1rem]"><a href={CVPDF} download>DOWNLOAD CV</a></button>
-        <ul className="lg:w-[50%] lg:self-center lg:h-[50px] lg:flex lg:flex-row lg:justify-between lg:mt-[4rem] mt-[5rem] flex flex-col md:ml-[-2rem]">
+        <button className="btn bg-primary text-black lg:self-end lg:mr-[5rem] lg:mt-[1rem]"><a href={CVPDF} download>DOWNLOAD CV</a></button>
+        <ul className="lg:w-[50%] lg:self-center lg:h-[50px] lg:flex lg:flex-row lg:justify-between lg:mt-[4rem] mt-[5rem] flex flex-col md:ml-[-2rem] ">
         <li className="icon_wrapper">
-        <a className= 'logo-contact' href="https://www.linkedin.com/in/ganna-andrushko-4406b2157/">
+        <a className= 'logo-contact p-1' href="https://www.linkedin.com/in/ganna-andrushko-4406b2157/">
           <RiLinkedinLine />
           </a>
         </li>
         <li className="icon_wrapper">
-        <a className= 'logo-contact' href="https://github.com/Ganna-And">
+        <a className= 'logo-contact p-1' href="https://github.com/Ganna-And">
           <RiGithubLine />
           </a>
         </li>
         <li className="icon_wrapper">
-        <a className= 'logo-contact' href="https://contacts.google.com/search/ganna.andrushko@gmail.com?hl=en-GB">
+        <a className= 'logo-contact p-1' href="https://contacts.google.com/search/ganna.andrushko@gmail.com?hl=en-GB">
           <RxEnvelopeClosed />
           </a>
         </li>
         <li className="icon_wrapper">
-        < button className='logo-content-btn' /* onClick={()=>{onOpen()}} */>
+        < button className='logo-content-btn m-1' /* onClick={()=>{onOpen()}} */>
           <RiWhatsappLine />
          </button>
         </li>

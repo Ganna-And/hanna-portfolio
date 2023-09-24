@@ -137,7 +137,9 @@ label {
 
 .container{
   margin-top: 6vh;
-  height: 94vh;
+  max-height: 93vh;
+  box-sizing: border-box;
+  overflow-y: hidden;
   display: flex;
   justify-content: center;
   align-items: center;

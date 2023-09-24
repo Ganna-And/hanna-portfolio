@@ -45,23 +45,23 @@ const Project = () => {
       <div className='project'>
         <div 
         className='main-head'>
-        <button className='btn' 
+        <button className='btn bg-primary btn-sm md:w-[10rem]  lg:w-[10rem] w-auto ' 
         onClick={changeProjectsBackwards}>
-        <FaAngleLeft style={{marginRight:'0'}} />Previous
+        <FaAngleLeft style={{marginRight:'0'}} /><p className='hidden lg:block md:block '>Previous</p>
     </button> 
-   <h1 className='text font-montserrat text-4xl font-bold'>
+   <h1 className='text font-montserrat lg:text-4xl md:text-3xl font-bold ml-[1.5rem]'>
     {projects[indexProject].title}</h1>   
    <button 
-    onClick={changeProjectsForward} className='btn'>
-    Next<FaAngleRight />
+    onClick={changeProjectsForward} className='btn  btn-sm bg-primary md:w-[10rem] lg:w-[10rem]  w-auto'>
+    <p className='hidden lg:block md:block'>Next</p><FaAngleRight />
    
     </button>
     </div>  
         <section className='img-box'>
-         <div className='carousel'>
+         <div className='carousel '>
          <img 
          alt='project screenshot'
-         className='img-container' src={projects[indexProject].img[indexImg]}/> 
+         className='img-container lg:w-[80%]' src={projects[indexProject].img[indexImg]}/> 
            <div className="indicators">
           {projects[indexProject].img.map((_, i)  =>(
            <div
@@ -71,17 +71,17 @@ const Project = () => {
           ))}
         </div>
         </div>
-        <div className='project-description'>
-       <p  className='text font-lora inline-block text-base'>{projects[indexProject].description}</p>
-       <ul className='mt-[3rem] ml-[2rem]'>{projects[indexProject].features.map((feature)=>(
+        <div className='project-description w-full lg:w-[60%]'>
+       <p  className='text font-lora inline-block text-xl mt-[2rem]  md:w-[100%]'>{projects[indexProject].description}</p>
+       <ul className='md:mt-[3rem] ml-[2rem] '>{projects[indexProject].features.map((feature)=>(
         <li key={feature.id} className='font-lora font-thin'>{feature}</li>
        ))}</ul>
        </div>
        </section> 
       
         <div className='references'>
-          <div className='technologies'>
-       <p className='font font-montserrat text-2xl '>Technologies:
+          <div className='technologies md:w-[40%]'>
+       <p className='font font-montserrat md:text-2xl  '>Technologies:
        <br />
        <span 
        className='font font-lora italic text-md'>{projects[indexProject].technologies}</span></p> 

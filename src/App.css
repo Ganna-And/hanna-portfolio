@@ -128,14 +128,6 @@ label {
   margin-top: 2rem;
 }
 
-.technologies{
-  width: 40%;
-}
-
-.carousel{
-  width: 28rem;
-}
-
 .logo-content-btn{
   height: 25px;
   width: 25px;
@@ -228,7 +220,7 @@ flex-direction: column;
   }
  
 
- .project-description, .technologies,.links{
+ .project-description{
   width: 95%;
   margin:2rem;
 }
@@ -297,15 +289,25 @@ img.cv {
 .image{
   width: 60%;
 }
+.project-description{
+  margin-inline: 0;
 }
 
-@media (min-width:560) and (max-width:800) {
- 
+}
+
+@media (max-width:468) {
+ .technologies{
+  width: 100%;
+  margin: 0rem;
+ }
+ .references{
+  display: block;
+ }
 }
 
 /* //mobile landscape */
 
-@media only screen and (min-width: 568px) and (max-width: 767px){
+@media only screen and (min-width: 468px) and (max-width: 767px){
   .image{
     width: 50%;
   }

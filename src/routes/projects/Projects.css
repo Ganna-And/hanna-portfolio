@@ -1,13 +1,11 @@
 main.myprojects {
-  min-height:90vh;
-  width: 90%;
+  min-height: 90vh;
+  width: 100%;
   margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3%;
-  border-radius: 2rem;
 }
 .main-head{
   display: flex;
@@ -19,7 +17,6 @@ div.project {
   display: flex;
   justify-content: center;
   align-items: start;
-  border-radius: 5%;
 }
 .img-container{
   margin-right: 4rem;
@@ -33,15 +30,11 @@ section.img-box {
   margin-top: 2rem
 
 }
-.project-description{
-  margin-left: 4rem;
-  width: 60%;
+
+.carousel{
+  width: 100%;
 }
 
-.project-description p{
-  font-size: x-large;
-  font-style: italic;
-}
 
 section.project-content {
   width: 100%;
@@ -95,8 +88,21 @@ section.project-content {
   background-color: black;
 }
 
-/* Smartphones */
-@media only screen and (max-width: 720px) {
+@media (max-width:478px){
+
+  .img-box{
+    flex-direction: column;
+  }
+
+  .links{
+    width: 100%;
+  }
+
+}
+
+
+/* mobile landscape */
+@media (min-width:478px) and (max-width: 767px) {
   
 
    main.myprojects {
@@ -158,8 +164,8 @@ svg.right, svg.left{
 } 
 }
 
-
-@media only screen and (min-width: 719px) and (max-width: 1080px) {
+/* TTTTAAAAAAAAAAABBBBBLEEEEEEEEETS */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
    
  .myprojects {
         width: 100%;
@@ -191,9 +197,7 @@ svg.right, svg.left{
 justify-content: space-between;
 text-align: center;
     }
+
+   
     }
 
-/* Tablets and larger devices */
-
-@media only screen and (min-width: 768px) and (max-width: 2000px) {
-}

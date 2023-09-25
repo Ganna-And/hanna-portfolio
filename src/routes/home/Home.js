@@ -59,7 +59,7 @@ const Home = ({ isChecked }) => {
   <span className="bg-primary h-100% w-0 absolute"></span>
   <a href={CVPDF} download>DOWNLOAD CV</a>
   </button>
-        <ul className="lg:w-[50%] lg:self-center lg:h-[50px] lg:flex lg:flex-row lg:justify-between lg:mt-[4rem] mt-[5rem] flex flex-col md:ml-[-2rem] ">
+        <ul className="ul_social">
         <li className="icon_wrapper">
         <a className= 'logo-contact p-1' href="https://www.linkedin.com/in/ganna-andrushko-4406b2157/">
           <RiLinkedinLine />

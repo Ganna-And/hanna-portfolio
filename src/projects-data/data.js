@@ -7,7 +7,7 @@ import Bahasa2 from '../img/bahasa2.jpg';
 import MusicAppImg2 from '../img/musicApp2.png'
 import Reddit from '../img/Fronten_Reddit.png'
 import Reddit1 from '../img/Fronten_Reddit1.png'
-import Reddit2 from '../img/Fronten_Reddit3.png';
+import Reddit2 from '../img/Fronten_Reddit2.png';
 import Store from '../img/ecommerce.png';
 import Store1 from '../img/ecommerce1.png'
 import Store2 from '../img/ecommerce2.png';

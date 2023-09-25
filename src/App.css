@@ -10,6 +10,8 @@
   box-sizing: inherit;
 }
 
+.ul_so
+
 button.download {
   padding: 0.5rem;
   border-radius: 10px;
@@ -92,27 +94,7 @@ header {
   width: 40%;
   display: flex;
 }
-  .ul-head {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-  }
-
-  .li-head {
-    list-style-type: none;
-    width: 30%;
-    text-align: center;
-    text-decoration: none;
-  }
-  
-  .li-head:hover{
-    text-decoration: underline;
-    font-weight: 600;
-    scale: 1.1;
-    transition: 500ms;
-  }
-
+ 
 
 .nav-head {
   width: 60%;
@@ -143,14 +125,22 @@ label {
   text-align: left;
   position: absolute;
   bottom: -3.8889px;
+  height: 80%;
   z-index: 20; 
-  left: 1px; }
+  left: 1px;
+  animation: transitionIn 2s;
+
+ }
   
-  
+ .ul_social{
+  animation: transitionIn 4s;
+ }
+ 
 .references{
   display: flex;
   width:100%;
   margin-top: 2rem;
+  animation: transitionIn 4s;
 }
 
 .logo-content-btn{
@@ -168,6 +158,18 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+
+@keyframes transitionIn{
+  from{
+    opacity: 0;
+    transform:rotateX(-10deg);
+  }
+  to{
+    opacity: 1;
+    transform:rotateX(0);
+  }
 }
 
 .info{
@@ -176,6 +178,7 @@ width: 60%;
 display: flex;
 margin-left: 25%;
 flex-direction: column;
+animation: transitionIn 2s;
 
 }
 
@@ -218,15 +221,7 @@ flex-direction: column;
     width: 100%;
   }
  
-  .ul-head {
-   margin-left: 4rem;
-   justify-content: end;
-  }
-  
-  .li-head {
-    width: auto;
-    margin-inline: 1rem;
-  }
+
 
   body, #root, .App {
     align-items: flex-start; 
@@ -289,6 +284,7 @@ hr{
 .img{
   height: 80%;
   width: 90%;
+  animation: transitionIn ease-in 3s;
 }
 img.cv {
   width: 100%;

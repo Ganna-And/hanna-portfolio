@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'pulse-slow': 'pulse 4s linear infinite',
+      },
       colors: {
         primary: "#4eb814"
       },

@@ -16,7 +16,6 @@ const Project = () => {
   const currentProject = projects[indexProject];
  
 
-
   useEffect(()=>{
     const interval = setInterval(()=>{
         setIndexImg((prev)=>(prev+1)%currentProject.img.length)
@@ -45,28 +44,30 @@ const Project = () => {
       <div className='project'>
         <div 
         className='main-head'>
-        <button className='btn bg-primary btn-sm md:w-[10rem]  lg:w-[10rem] w-auto ' 
+        <button className='btn_switch_project' 
         onClick={changeProjectsBackwards}>
         <FaAngleLeft style={{marginRight:'0'}} /><p className='hidden lg:block md:block '>Previous</p>
     </button> 
    <h1 className='text font-montserrat lg:text-3xl md:text-3xl font-bold ml-[1.5rem]'>
     {projects[indexProject].title}</h1>   
    <button 
-    onClick={changeProjectsForward} className='btn  btn-sm bg-primary md:w-[10rem] lg:w-[10rem]  w-auto'>
+    onClick={changeProjectsForward} className='btn_switch_project'>
     <p className='hidden lg:block md:block'>Next</p><FaAngleRight />
    
     </button>
     </div>  
         <section className='img-box'>
          <div className='carousel flex-col'>
-         <img 
-         alt='project screenshot'
-         className='img-container lg:w-[80%]' src={projects[indexProject].img[indexImg]}/> 
+         <img
+  alt="project screenshot"
+  className={`img-container lg:w-[80%]`}
+  src={projects[indexProject].img[indexImg]}
+/>
            <div className="indicators">
           {projects[indexProject].img.map((_, i)  =>(
            <div
            key={i}
-           className={`myindicator ${i === indexImg ? 'active' : ''}`}
+           className={`myindicator  ${i === indexImg ? 'active' : ''}`}
            onClick={()=>changeImage(i)}></div>
           ))}
         </div>
@@ -75,7 +76,7 @@ const Project = () => {
        <p  className='text font-lora  lg:text-xl lg:mt-[2rem]  md:w-[100%]'>{projects[indexProject].description}</p>
        <ul className='md:mt-[3rem] ml-[2rem] '>{projects[indexProject].features.map((feature)=>(
         <li key={feature.id} className='font-lora font-thin'>{feature}</li>
-       ))}</ul>
+       ))}</ul> 
        </div>
        </section> 
       

@@ -6,6 +6,7 @@ main.myprojects {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: transitionIn 2s;
 }
 .main-head{
   display: flex;
@@ -23,7 +24,10 @@ div.project {
 .img-container{
   border-radius: 2rem;
   box-shadow: 2px 2px 3px hsl(0, 0%, 0%, 0.6);
+ 
 }
+
+
 section.img-box {
   display: flex;
   height: auto;

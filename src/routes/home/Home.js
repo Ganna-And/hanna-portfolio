@@ -55,8 +55,8 @@ const Home = ({ isChecked }) => {
           style={{ fontSize: "1.3rem", fontWeight: "400" }}
           ref={skillRef}
         ></aside> 
-        <button className="download bg-transparent border-2 border-primary lg:self-end lg:mr-[5rem] lg:mt-[1rem] relative">
-  <span className="bg-primary h-100% w-0 absolute"></span>
+        <button className=" download  bg-transparent border-2 border-primary lg:self-end lg:mr-[5rem] lg:mt-[1rem] relative lg:p-[0.5rem] rounded-lg flex align-middle">
+  <span className="bg-primary h-90% w-0 absolute rounded-lg"></span>
   <a href={CVPDF} download>DOWNLOAD CV</a>
   </button>
         <ul className="ul_social">

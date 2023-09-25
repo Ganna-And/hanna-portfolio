@@ -53,7 +53,6 @@ const Project = () => {
    <button 
     onClick={changeProjectsForward} className='btn_switch_project'>
     <p className='hidden lg:block md:block'>Next</p><FaAngleRight />
-   
     </button>
     </div>  
         <section className='img-box'>

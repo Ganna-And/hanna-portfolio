@@ -1,20 +1,22 @@
 
-import MusicAppImg from '../img/musicApp.png'
-import MusicAppImg1 from '../img/musicApp1.png';
-import Bahasa1 from '../img/bahasa1.jpg';
-import Bahasa4 from '../img/bahasa4.jpg';
-import Bahasa2 from '../img/bahasa2.jpg';
-import MusicAppImg2 from '../img/musicApp2.png'
-import Reddit from '../img/Fronten_Reddit.png'
-import Reddit1 from '../img/Fronten_Reddit1.png'
-import Reddit2 from '../img/Fronten_Reddit2.png';
+import MusicAppImg from '../img/spot3.png'
+import MusicAppImg1 from '../img/spot2.png';
+import Bahasa1 from '../img/lb.png';
+import Bahasa4 from '../img/lB1.png';
+import Bahasa2 from '../img/lb2.png';
+import MusicAppImg2 from '../img/spotify 1.png'
+import Reddit from '../img/red3.png'
+import Reddit1 from '../img/red1.png'
+import Reddit2 from '../img/red2.png';
 import Store from '../img/ecommerce.png';
 import Store1 from '../img/ecommerce1.png'
 import Store2 from '../img/ecommerce2.png';
-import Coffe1 from '../img/coffe-shop1.png';
-import Coffe2 from '../img/coffe-shop2.png';
-import Coffe3 from '../img/coffe-shop3.png';
-
+import Coffe1 from '../img/cf1.png';
+import Coffe2 from '../img/cf2.png';
+import Coffe3 from '../img/cf3.png';
+import Ang from '../img/image2.png';
+import Ang2 from '../img/img3.png';
+import Ang3 from '../img/Group 14.png';
 
 
 
@@ -32,6 +34,18 @@ export const myProjects = [{
    ],
    links:['https://github.com/Ganna-And/musicApp.git','https://music-app-delta-han.vercel.app/'],
  technologies:'React.js, Spotify API, Asynchronous JavaScript, Redux, ChakraUi'},
+{
+    img:[Ang, Ang2, Ang3],
+    title:'Blog app& Dashbord',
+    description:"Blog application with an integrated backend Content Management System (CMS) connected to the frontend. Dynamic filtering options for posts based on categories, creation time, and featured content. Enabled newsletter subscription functionality for users. ",
+   features:[
+     "CRUD operation with Firebase",
+     "Firebase Athentication",
+     "Fully responsive design",
+     "Filtering Posts by date, category",
+   ],
+   links:['https://blo-ang-dashboard.web.app','https://dashboardposts.web.app'],
+ technologies:'Angular, TypeScript, Firebase, Bootstrap'},
    
    {
    img: [Bahasa1, Bahasa4, Bahasa2 ],

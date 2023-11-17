@@ -4,7 +4,7 @@ import { RiWhatsappLine, RiGithubLine, RiLinkedinLine } from "react-icons/ri";
 import{RxEnvelopeClosed} from 'react-icons/rx'
 import { useState } from "react";
 import profile from "../../img/Hanna_Photo.png";
-import CVPDF from '../../img/My CV.pdf.png'
+import CVPDF from '../../img/HannaCV_en (1) (1).pdf.pdf'
 
 const Home = ({ isChecked }) => {
   const skills = ["HTML", "CSS", "JavaScript", "ReactJs", "Redux"];

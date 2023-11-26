@@ -4,21 +4,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Montserrat:wght@200;400;700&display=swap');
 
 .icon_wrapper {
-    @apply lg:w-16 lg:h-16 border-2 rounded-full border-primary flex justify-center items-center self-end mb-4;
-  }
-.btn:hover{
+  @apply lg:w-16 lg:h-16 border-2 rounded-full border-primary flex justify-center items-center self-end mb-4;
+}
+
+.btn:hover {
   @apply bg-primary opacity-50
 }
 
-.ul_social{
+/* .ul_social{
   @apply lg:w-[50%] lg:self-center lg:h-[50px] lg:flex lg:flex-row lg:justify-between lg:mt-[4rem] mt-[5rem] flex flex-col md:ml-[-2rem] 
+} */
+
+.btn_switch_project {
+  @apply btn bg-primary btn-sm text-black md:w-[10rem] lg:w-[10rem] w-auto
 }
 
-.btn_switch_project{
-  @apply btn bg-primary btn-sm text-black md:w-[10rem]  lg:w-[10rem] w-auto 
-}
- body{
+body {
   @apply font-montserrat
- }
-
- 
+}

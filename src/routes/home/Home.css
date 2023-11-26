@@ -1,5 +1,4 @@
-
-.phone{
+.phone {
     width: 220px;
     background-color: #3C4245;
     margin-right: 5%;
@@ -14,17 +13,18 @@
 
 }
 
-.screen{
+.screen {
     height: 100%;
     width: 100%;
     background-color: #DFCDC3;
-    overflow: hidden; 
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: start;
 }
-.content{
+
+.content {
     width: 12rem;
     height: 100%;
     display: grid;
@@ -33,33 +33,27 @@
 
 }
 
-.camera{
+.camera {
 
-    margin-top:1%;
+    margin-top: 1%;
     border: 1px solid black;
-    width:1rem;
+    width: 1rem;
     height: 1rem;
     border-radius: 50%;
     background-color: #3C4245;
     position: relative;
 
-   
-}
-img.profile_img{
-position: absolute;
-bottom: 0;
-left: 0;
-width: 25%;
+
 }
 
-.contact-box{
+.contact-box {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
-svg{
+svg {
     height: 25px;
     width: 25px;
     border-radius: 5px;
@@ -69,33 +63,35 @@ svg{
 
 
 
-svg:hover{
+svg:hover {
     cursor: pointer;
     transform: scale(1.25);
 }
 
-.name{
+.name {
     width: 100%;
 }
-.icon_wrapper:hover{
-  border: 2px solid greenyellow;
-  animation: pulse 1s infinite alternate;
+
+.icon_wrapper:hover {
+    border: 2px solid greenyellow;
+    animation: pulse 1s infinite alternate;
 }
+
 @keyframes pulse {
-        0% {
-          transform: scale(1);
-        }
-        100% {
-          transform: scale(1.1);
-        }
-      }
-svg:active{
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+svg:active {
     box-shadow: none;
     border: #353534 1px solid;
 }
 
 
 
-@media screen {
-    
-}
+@media screen {}

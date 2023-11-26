@@ -37,13 +37,17 @@ const Home = ({ isChecked }) => {
 
   return (
     <main className="container">
-      <img className="image " src={profile} alt="profile" />
-      <div className="info">
-        <h1 className="text lg:text-7xl font-montserrat font-bold  md:text-6xl text-4xl mt-0 ">
-          Greetings!I'm{" "}
-        </h1>
-        <h1 className="text lg:text-5xl text-3xl  ">
+     <h1 className="text text-3xl  mt-4 font-bold  lg:text-4xl">
           Frontend<span className="text-primary font-montserrat"> Developer</span> Intern
+        </h1> 
+        <div className="wr_img w-[220px] h-fit rounded-full mr-4 overflow-hidden float-left  ">
+      <img className="image object-contain object-center" fill src={profile} alt="profile"  />
+ </div>
+        <h1 className="text
+       
+          font-montserrat
+             text-4xl mt-8 ">
+          Greetings!I'm Hanna Abdrushko
         </h1>
         <h4 className="text font-lora lg:text-xl font-[100]">
         dedicated to crafting exceptional user experiences through cutting-edge web technologies.
@@ -81,8 +85,8 @@ const Home = ({ isChecked }) => {
          </button>
         </li>
       </ul>
-      </div>
-     
+      
+
     </main>
   );
 };

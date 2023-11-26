@@ -1,10 +1,10 @@
 
-import MusicAppImg from '../img/spot3.png'
-import MusicAppImg1 from '../img/spot2.png';
+import MusicAppImg from '../img/tune1.png'
+import MusicAppImg1 from '../img/tune2.png';
 import Bahasa1 from '../img/lb.png';
 import Bahasa4 from '../img/lB1.png';
 import Bahasa2 from '../img/lb2.png';
-import MusicAppImg2 from '../img/spotify 1.png'
+import MusicAppImg2 from '../img/tune3.png'
 import Reddit from '../img/red3.png'
 import Reddit1 from '../img/red1.png'
 import Reddit2 from '../img/red2.png';
@@ -23,17 +23,17 @@ import Ang3 from '../img/Group 14.png';
 
 export const myProjects = [{
     img:[MusicAppImg, MusicAppImg1, MusicAppImg2],
-    title:'Jammming: Spotify Playlist Manager',
-    description:"Using my skills in React components and working with the Spotify API, I built a tool that lets users explore Spotifys music collection.",
+    title:'Tune Truve: Spotify app clone',
+    description:" Music platform that allows subscribed users to upload and play songs and enjoy features like favorites and playlists. It supports Stripe recurring payments, and in server React components, accesses the database directly. Real-time handling of server-child component relations and Stripe subscription cancellations add to its comprehensive functionality.",
    features:[
-     "Search songs",
-     "Preview tracks",
-     "Create and manage playlists",
-     "Add selected songs to playlists",
-     "Securely sync changes with Spotify"
+     "Search songs and add to favorites",
+     "Upload your own songs in mp3 format with Image",
+     "Authentication through Guthub, magic link or email/password",
+     "Fully functioning player for 1 or multiple songs",
+     "Implementation of paid subscriptions through stripe"
    ],
-   links:['https://github.com/Ganna-And/musicApp.git','https://music-app-delta-han.vercel.app/'],
- technologies:'React.js, Spotify API, Asynchronous JavaScript, Redux, ChakraUi'},
+   links:['https://github.com/Ganna-And/tune-truve','https://tune-truve.vercel.app/'],
+ technologies:'Next, Supabase, Tailwind CSS, Stripe, PostgreSQL '},
 {
     img:[Ang, Ang2, Ang3],
     title:'Blog app& Dashbord',
